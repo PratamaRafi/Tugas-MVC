@@ -15,12 +15,5 @@ Route::get('/', 'HomeController@home');
 
 Route::get('/register', 'AuthController@register');
 
-Route::get('/welcome', 'AuthController@welcome');
-
-Route::get('/register', function (){
-    return view('form');
-});
-
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/welcome', 'AuthController@welcome');
+Route::post('/welcome', 'AuthController@welcome_post');

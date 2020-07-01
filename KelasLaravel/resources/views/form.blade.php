@@ -1,7 +1,7 @@
 <div>
     <h2>Buat Account Baru!</h2>
-        <form action="/welcome" action="#">
-        {{crsf_field()}}
+        <form action="/welcome" method="POST">
+            @csrf
             <div>
                 <label>First Name:</label>
                 <input type="text" name="first_name">
